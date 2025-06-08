@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9203D882DF368A900BBDB5E /* AccessControlNinja Dev.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9203D792DF368A900BBDB5E /* AccessControlNinja Dev.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9203D9C2DF3696300BBDB5E /* AccessControlNinjaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */; };
+		E9203DB52DF3698700BBDB5E /* AccessControlNinjaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */; };
+		E9203DB62DF3698700BBDB5E /* AccessControlNinjaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9203DBB2DF369D100BBDB5E /* SwiftParser in Frameworks */ = {isa = PBXBuildFile; productRef = E9203DBA2DF369D100BBDB5E /* SwiftParser */; };
+		E9203DBD2DF369D100BBDB5E /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = E9203DBC2DF369D100BBDB5E /* SwiftSyntax */; };
+		E9203DCA2DF46E4D00BBDB5E /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9203DB22DF3698000BBDB5E /* XcodeKit.framework */; };
+		E9203DCB2DF46E4D00BBDB5E /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9203DB22DF3698000BBDB5E /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E97C5BCA2DF4790800C90598 /* SystemSettingsNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = E97C5BC92DF4790800C90598 /* SystemSettingsNavigator */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9203D862DF368A900BBDB5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9203D422DF3689000BBDB5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9203D782DF368A900BBDB5E;
+			remoteInfo = AccessControlNinjaExtension;
+		};
+		E9203D9D2DF3696300BBDB5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9203D422DF3689000BBDB5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9203D922DF3696300BBDB5E;
+			remoteInfo = AccessControlNinjaCore;
+		};
+		E9203D9F2DF3696300BBDB5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9203D422DF3689000BBDB5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9203D492DF3689000BBDB5E;
+			remoteInfo = AccessControlNinja;
+		};
+		E9203DB72DF3698700BBDB5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9203D422DF3689000BBDB5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9203D922DF3696300BBDB5E;
+			remoteInfo = AccessControlNinjaCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9203D8D2DF368A900BBDB5E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9203D882DF368A900BBDB5E /* AccessControlNinja Dev.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203DB12DF3697C00BBDB5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9203DB62DF3698700BBDB5E /* AccessControlNinjaCore.framework in Embed Frameworks */,
+				E9203DCB2DF46E4D00BBDB5E /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9203D4A2DF3689000BBDB5E /* AccessControlNinja for Xcode Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AccessControlNinja for Xcode Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9203D792DF368A900BBDB5E /* AccessControlNinja Dev.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AccessControlNinja Dev.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9203D7B2DF368A900BBDB5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E9203D7D2DF368A900BBDB5E /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccessControlNinjaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9203D9B2DF3696300BBDB5E /* AccessControlNinjaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessControlNinjaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9203DB22DF3698000BBDB5E /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		E98E72792DF5568C00EA6864 /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
+		E98E727B2DF5576800EA6864 /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E9203D892DF368A900BBDB5E /* Exceptions for "AccessControlNinjaExtension" folder in "AccessControlNinjaExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E9203D782DF368A900BBDB5E /* AccessControlNinjaExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E9203D4C2DF3689000BBDB5E /* AccessControlNinja */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AccessControlNinja;
+			sourceTree = "<group>";
+		};
+		E9203D7F2DF368A900BBDB5E /* AccessControlNinjaExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E9203D892DF368A900BBDB5E /* Exceptions for "AccessControlNinjaExtension" folder in "AccessControlNinjaExtension" target */,
+			);
+			path = AccessControlNinjaExtension;
+			sourceTree = "<group>";
+		};
+		E9203D942DF3696300BBDB5E /* AccessControlNinjaCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AccessControlNinjaCore;
+			sourceTree = "<group>";
+		};
+		E9203DA12DF3696300BBDB5E /* AccessControlNinjaCoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AccessControlNinjaCoreTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9203D472DF3689000BBDB5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C5BCA2DF4790800C90598 /* SystemSettingsNavigator in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D762DF368A900BBDB5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9203DB52DF3698700BBDB5E /* AccessControlNinjaCore.framework in Frameworks */,
+				E9203DCA2DF46E4D00BBDB5E /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D902DF3696300BBDB5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9203DBB2DF369D100BBDB5E /* SwiftParser in Frameworks */,
+				E9203DBD2DF369D100BBDB5E /* SwiftSyntax in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D982DF3696300BBDB5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9203D9C2DF3696300BBDB5E /* AccessControlNinjaCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9203D412DF3689000BBDB5E = {
+			isa = PBXGroup;
+			children = (
+				E98E727B2DF5576800EA6864 /* Config-Debug.xcconfig */,
+				E98E72792DF5568C00EA6864 /* Config-Release.xcconfig */,
+				E9203D4C2DF3689000BBDB5E /* AccessControlNinja */,
+				E9203D7F2DF368A900BBDB5E /* AccessControlNinjaExtension */,
+				E9203D942DF3696300BBDB5E /* AccessControlNinjaCore */,
+				E9203DA12DF3696300BBDB5E /* AccessControlNinjaCoreTests */,
+				E9203D7A2DF368A900BBDB5E /* Frameworks */,
+				E9203D4B2DF3689000BBDB5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9203D4B2DF3689000BBDB5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9203D4A2DF3689000BBDB5E /* AccessControlNinja for Xcode Dev.app */,
+				E9203D792DF368A900BBDB5E /* AccessControlNinja Dev.appex */,
+				E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */,
+				E9203D9B2DF3696300BBDB5E /* AccessControlNinjaCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9203D7A2DF368A900BBDB5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9203DB22DF3698000BBDB5E /* XcodeKit.framework */,
+				E9203D7B2DF368A900BBDB5E /* Cocoa.framework */,
+				E9203D7D2DF368A900BBDB5E /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9203D8E2DF3696300BBDB5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9203D492DF3689000BBDB5E /* AccessControlNinja */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9203D6C2DF3689100BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinja" */;
+			buildPhases = (
+				E9203D462DF3689000BBDB5E /* Sources */,
+				E9203D472DF3689000BBDB5E /* Frameworks */,
+				E9203D482DF3689000BBDB5E /* Resources */,
+				E9203D8D2DF368A900BBDB5E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9203D872DF368A900BBDB5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E9203D4C2DF3689000BBDB5E /* AccessControlNinja */,
+			);
+			name = AccessControlNinja;
+			packageProductDependencies = (
+				E97C5BC92DF4790800C90598 /* SystemSettingsNavigator */,
+			);
+			productName = AccessControlNinja;
+			productReference = E9203D4A2DF3689000BBDB5E /* AccessControlNinja for Xcode Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9203D782DF368A900BBDB5E /* AccessControlNinjaExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9203D8A2DF368A900BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaExtension" */;
+			buildPhases = (
+				E9203D752DF368A900BBDB5E /* Sources */,
+				E9203D762DF368A900BBDB5E /* Frameworks */,
+				E9203D772DF368A900BBDB5E /* Resources */,
+				E9203DB12DF3697C00BBDB5E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9203DB82DF3698700BBDB5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E9203D7F2DF368A900BBDB5E /* AccessControlNinjaExtension */,
+			);
+			name = AccessControlNinjaExtension;
+			packageProductDependencies = (
+			);
+			productName = AccessControlNinjaExtension;
+			productReference = E9203D792DF368A900BBDB5E /* AccessControlNinja Dev.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		E9203D922DF3696300BBDB5E /* AccessControlNinjaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9203DA82DF3696300BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaCore" */;
+			buildPhases = (
+				E9203D8E2DF3696300BBDB5E /* Headers */,
+				E9203D8F2DF3696300BBDB5E /* Sources */,
+				E9203D902DF3696300BBDB5E /* Frameworks */,
+				E9203D912DF3696300BBDB5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E9203D942DF3696300BBDB5E /* AccessControlNinjaCore */,
+			);
+			name = AccessControlNinjaCore;
+			packageProductDependencies = (
+				E9203DBA2DF369D100BBDB5E /* SwiftParser */,
+				E9203DBC2DF369D100BBDB5E /* SwiftSyntax */,
+			);
+			productName = AccessControlNinjaCore;
+			productReference = E9203D932DF3696300BBDB5E /* AccessControlNinjaCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9203D9A2DF3696300BBDB5E /* AccessControlNinjaCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9203DAC2DF3696300BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaCoreTests" */;
+			buildPhases = (
+				E9203D972DF3696300BBDB5E /* Sources */,
+				E9203D982DF3696300BBDB5E /* Frameworks */,
+				E9203D992DF3696300BBDB5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9203D9E2DF3696300BBDB5E /* PBXTargetDependency */,
+				E9203DA02DF3696300BBDB5E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E9203DA12DF3696300BBDB5E /* AccessControlNinjaCoreTests */,
+			);
+			name = AccessControlNinjaCoreTests;
+			packageProductDependencies = (
+			);
+			productName = AccessControlNinjaCoreTests;
+			productReference = E9203D9B2DF3696300BBDB5E /* AccessControlNinjaCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9203D422DF3689000BBDB5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E9203D492DF3689000BBDB5E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E9203D782DF368A900BBDB5E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E9203D922DF3696300BBDB5E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E9203D9A2DF3696300BBDB5E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E9203D492DF3689000BBDB5E;
+					};
+				};
+			};
+			buildConfigurationList = E9203D452DF3689000BBDB5E /* Build configuration list for PBXProject "AccessControlNinja" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9203D412DF3689000BBDB5E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E9203DB92DF369D100BBDB5E /* XCRemoteSwiftPackageReference "swift-syntax" */,
+				E97C5BC82DF4790800C90598 /* XCRemoteSwiftPackageReference "SystemSettingsNavigator" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E9203D4B2DF3689000BBDB5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9203D492DF3689000BBDB5E /* AccessControlNinja */,
+				E9203D782DF368A900BBDB5E /* AccessControlNinjaExtension */,
+				E9203D922DF3696300BBDB5E /* AccessControlNinjaCore */,
+				E9203D9A2DF3696300BBDB5E /* AccessControlNinjaCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9203D482DF3689000BBDB5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D772DF368A900BBDB5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D912DF3696300BBDB5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D992DF3696300BBDB5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9203D462DF3689000BBDB5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D752DF368A900BBDB5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D8F2DF3696300BBDB5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9203D972DF3696300BBDB5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9203D872DF368A900BBDB5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9203D782DF368A900BBDB5E /* AccessControlNinjaExtension */;
+			targetProxy = E9203D862DF368A900BBDB5E /* PBXContainerItemProxy */;
+		};
+		E9203D9E2DF3696300BBDB5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9203D922DF3696300BBDB5E /* AccessControlNinjaCore */;
+			targetProxy = E9203D9D2DF3696300BBDB5E /* PBXContainerItemProxy */;
+		};
+		E9203DA02DF3696300BBDB5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9203D492DF3689000BBDB5E /* AccessControlNinja */;
+			targetProxy = E9203D9F2DF3696300BBDB5E /* PBXContainerItemProxy */;
+		};
+		E9203DB82DF3698700BBDB5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9203D922DF3696300BBDB5E /* AccessControlNinjaCore */;
+			targetProxy = E9203DB72DF3698700BBDB5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E9203D6A2DF3689100BBDB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98E727B2DF5576800EA6864 /* Config-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9203D6B2DF3689100BBDB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98E72792DF5568C00EA6864 /* Config-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E9203D6D2DF3689100BBDB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AccessControlNinja/AccessControlNinja.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.com.JH.AccessControlNinja;
+				PRODUCT_NAME = "$(HOST_APP_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9203D6E2DF3689100BBDB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AccessControlNinja/AccessControlNinja.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja;
+				PRODUCT_NAME = "$(HOST_APP_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9203D8B2DF368A900BBDB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccessControlNinjaExtension/AccessControlNinjaExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccessControlNinjaExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccessControlNinjaExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.com.JH.AccessControlNinja.AccessControlNinjaExtension;
+				PRODUCT_NAME = "$(EXTENSION_BUNDLE_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9203D8C2DF368A900BBDB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AccessControlNinjaExtension/AccessControlNinjaExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccessControlNinjaExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccessControlNinjaExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja.AccessControlNinjaExtension;
+				PRODUCT_NAME = "$(EXTENSION_BUNDLE_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9203DA92DF3696300BBDB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja.AccessControlNinjaCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9203DAA2DF3696300BBDB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja.AccessControlNinjaCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9203DAD2DF3696300BBDB5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja.AccessControlNinjaCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccessControlNinja.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AccessControlNinja";
+			};
+			name = Debug;
+		};
+		E9203DAE2DF3696300BBDB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.AccessControlNinja.AccessControlNinjaCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AccessControlNinja.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AccessControlNinja";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9203D452DF3689000BBDB5E /* Build configuration list for PBXProject "AccessControlNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9203D6A2DF3689100BBDB5E /* Debug */,
+				E9203D6B2DF3689100BBDB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9203D6C2DF3689100BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinja" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9203D6D2DF3689100BBDB5E /* Debug */,
+				E9203D6E2DF3689100BBDB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9203D8A2DF368A900BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9203D8B2DF368A900BBDB5E /* Debug */,
+				E9203D8C2DF368A900BBDB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9203DA82DF3696300BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9203DA92DF3696300BBDB5E /* Debug */,
+				E9203DAA2DF3696300BBDB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9203DAC2DF3696300BBDB5E /* Build configuration list for PBXNativeTarget "AccessControlNinjaCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9203DAD2DF3696300BBDB5E /* Debug */,
+				E9203DAE2DF3696300BBDB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9203DB92DF369D100BBDB5E /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-syntax";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 601.0.1;
+			};
+		};
+		E97C5BC82DF4790800C90598 /* XCRemoteSwiftPackageReference "SystemSettingsNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mx-Iris/SystemSettingsNavigator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9203DBA2DF369D100BBDB5E /* SwiftParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9203DB92DF369D100BBDB5E /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftParser;
+		};
+		E9203DBC2DF369D100BBDB5E /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9203DB92DF369D100BBDB5E /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		E97C5BC92DF4790800C90598 /* SystemSettingsNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E97C5BC82DF4790800C90598 /* XCRemoteSwiftPackageReference "SystemSettingsNavigator" */;
+			productName = SystemSettingsNavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9203D422DF3689000BBDB5E /* Project object */;
+}

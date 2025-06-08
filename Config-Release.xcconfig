@@ -1,0 +1,5 @@
+HOST_APP_NAME = AccessControlNinja for Xcode
+BUNDLE_IDENTIFIER_BASE = com.JH.AccessControlNinja
+EXTENSION_BUNDLE_NAME = AccessControlNinja
+EXTENSION_BUNDLE_DISPLAY_NAME = AccessControlNinja
+EXTENSION_SERVICE_NAME = AccessControlNinja for Xcode Extension
