@@ -6,7 +6,7 @@ final class AccessControlRewriter: SyntaxRewriter {
 
     init(accessChange: AccessControlChange) {
         self.accessChange = accessChange
-        super.init(viewMode: .all)
+        super.init(viewMode: .sourceAccurate)
     }
 
     private func newAccessModifierSyntax(for level: AccessControlLevel) -> DeclModifierSyntax {
@@ -21,9 +21,9 @@ final class AccessControlRewriter: SyntaxRewriter {
         existingModifiers: DeclModifierListSyntax?,
         declKeywordOriginalLeadingTrivia: Trivia
     ) -> (finalModifiers: DeclModifierListSyntax, finalDeclKeywordLeadingTrivia: Trivia) {
-        var modifiers: [DeclModifierSyntax] = existingModifiers?.children(viewMode: .all).compactMap { $0.as(DeclModifierSyntax.self) } ?? []
+        var modifiers: [DeclModifierSyntax] = existingModifiers?.children(viewMode: .sourceAccurate).compactMap { $0.as(DeclModifierSyntax.self) } ?? []
         
-        var hasAccessModifier = modifiers.contains { $0.isAccessControl }
+        let hasAccessModifier = modifiers.contains { $0.isAccessControl }
         
         var effectiveInitialLeadingTrivia: Trivia
 
@@ -164,11 +164,11 @@ final class AccessControlRewriter: SyntaxRewriter {
     }
 
     override func visit(_ node: StructDeclSyntax) -> DeclSyntax {
-        return _visit(node)
+        return _visitWithMembers(node)
     }
 
     override func visit(_ node: EnumDeclSyntax) -> DeclSyntax {
-        return _visit(node)
+        return _visitWithMembers(node)
     }
 
     override func visit(_ node: ProtocolDeclSyntax) -> DeclSyntax {

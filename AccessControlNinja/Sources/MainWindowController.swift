@@ -22,7 +22,7 @@ final class MainWindowController: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        window?.title = "AccessControlNinja"
+        window?.title = "AccessControlNinja for Xcode"
         window?.center()
         window?.styleMask.remove(.resizable)
         window?.titlebarAppearsTransparent = true

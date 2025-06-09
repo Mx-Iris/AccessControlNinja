@@ -36,11 +36,11 @@ protocol SourceEditorCommand: NSObject {
 
 extension SourceEditorCommand {
     var commandClassName: String { Self.className() }
-    var identifier: String { commandClassName }
+    var identifier: String { String(describing: Self.self) }
 
     func makeCommandDefinition() -> [XCSourceEditorCommandDefinitionKey: Any] {
         [.classNameKey: commandClassName,
-         .identifierKey: identifierPrefix + identifier,
+         .identifierKey: identifierPrefix + "." + identifier,
          .nameKey: name]
     }
 }
