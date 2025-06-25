@@ -22,9 +22,9 @@ final class AccessControlRewriter: SyntaxRewriter {
         declKeywordOriginalLeadingTrivia: Trivia
     ) -> (finalModifiers: DeclModifierListSyntax, finalDeclKeywordLeadingTrivia: Trivia) {
         var modifiers: [DeclModifierSyntax] = existingModifiers?.children(viewMode: .sourceAccurate).compactMap { $0.as(DeclModifierSyntax.self) } ?? []
-        
+
         let hasAccessModifier = modifiers.contains { $0.isAccessControl }
-        
+
         var effectiveInitialLeadingTrivia: Trivia
 
         if let firstOriginalModifier = modifiers.first {
@@ -50,14 +50,14 @@ final class AccessControlRewriter: SyntaxRewriter {
         }
 
         switch accessChange {
-        case .setLevel(let accessControlLevel, let skipIfAlreadySet):
+        case let .setLevel(accessControlLevel, skipIfAlreadySet):
             if skipIfAlreadySet, hasAccessModifier {} else {
                 removeAllAccessControlKeywords()
                 modifiers.insert(DeclModifierSyntax(name: .keyword(accessControlLevel.keyword)), at: 0)
             }
         case .increaseLevel:
             for (index, modifier) in modifiersCopy.enumerated() {
-                if case .keyword(let keyword) = modifier.name.tokenKind, let level = AccessControlLevel.forKeyword(keyword) {
+                if case let .keyword(keyword) = modifier.name.tokenKind, let level = AccessControlLevel.forKeyword(keyword) {
                     removeAllAccessControlKeywords()
                     modifiers.insert(newAccessModifierSyntax(for: level.increase), at: index)
                     break
@@ -65,7 +65,7 @@ final class AccessControlRewriter: SyntaxRewriter {
             }
         case .decreaseLevel:
             for (index, modifier) in modifiersCopy.enumerated() {
-                if case .keyword(let keyword) = modifier.name.tokenKind, let level = AccessControlLevel.forKeyword(keyword) {
+                if case let .keyword(keyword) = modifier.name.tokenKind, let level = AccessControlLevel.forKeyword(keyword) {
                     removeAllAccessControlKeywords()
                     modifiers.insert(newAccessModifierSyntax(for: level.decrease), at: index)
                     break
@@ -73,7 +73,7 @@ final class AccessControlRewriter: SyntaxRewriter {
             }
         case .removeAccessControl:
             for modifier in modifiersCopy {
-                if case .keyword(let keyword) = modifier.name.tokenKind, let _ = AccessControlLevel.forKeyword(keyword) {
+                if case let .keyword(keyword) = modifier.name.tokenKind, let _ = AccessControlLevel.forKeyword(keyword) {
                     removeAllAccessControlKeywords()
                     break
                 }
@@ -116,7 +116,7 @@ final class AccessControlRewriter: SyntaxRewriter {
         return DeclSyntax(newNode)
     }
 
-    private func _visitWithMembers<TargetDeclSyntax: AccessControlDeclSyntax & HasMembersDeclSyntax>(_ node: TargetDeclSyntax) -> DeclSyntax {
+    private func _visitWithMembers<TargetDeclSyntax: AccessControlDeclSyntax & HasMembersDeclSyntax>(_ node: TargetDeclSyntax, visitSelf: Bool = true) -> DeclSyntax {
         var members: [MemberBlockItemSyntax] = []
         for var member in node.memberBlock.members {
             if let variableDecl = member.decl.as(VariableDeclSyntax.self) {
@@ -148,7 +148,12 @@ final class AccessControlRewriter: SyntaxRewriter {
             }
             members.append(member)
         }
-        return _visit(node.with(\.memberBlock.members, MemberBlockItemListSyntax(members)))
+        let node = node.with(\.memberBlock.members, MemberBlockItemListSyntax(members))
+        if visitSelf {
+            return _visit(node)
+        } else {
+            return DeclSyntax(node)
+        }
     }
 
     override func visit(_ node: FunctionDeclSyntax) -> DeclSyntax {
@@ -196,7 +201,7 @@ final class AccessControlRewriter: SyntaxRewriter {
     }
 
     override func visit(_ node: ExtensionDeclSyntax) -> DeclSyntax {
-        return _visit(node)
+        return _visitWithMembers(node, visitSelf: node.memberBlock.members.isEmpty)
     }
 }
 
@@ -279,7 +284,7 @@ extension ImportDeclSyntax: AccessControlDeclSyntax {
     }
 }
 
-extension ExtensionDeclSyntax: AccessControlDeclSyntax {
+extension ExtensionDeclSyntax: AccessControlDeclSyntax, HasMembersDeclSyntax {
     var keyword: TokenSyntax {
         set { extensionKeyword = newValue }
         get { extensionKeyword }
@@ -288,7 +293,7 @@ extension ExtensionDeclSyntax: AccessControlDeclSyntax {
 
 extension DeclModifierSyntax {
     var isAccessControl: Bool {
-        if case .keyword(let keyword) = name.tokenKind {
+        if case let .keyword(keyword) = name.tokenKind {
             return AccessControlLevel.allKeywords.contains(keyword)
         }
         return false
